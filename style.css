@@ -1,0 +1,100 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(11, 243, 228), rgb(85, 118, 236));
+}
+
+.wrapper {
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.wrapper .inputField {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+}
+
+.inputField input {
+  /*input클래스*/
+  width: 85%; /*가로 길이*/
+  height: 40px; /*세로길이*/
+  border: 3px solid rgb(194, 187, 187); /*박스 테두리 설정값, 형식 : border: ?px ? color*/
+  font-size: 17px;
+  border-radius: 7px; /*박스(사각형) 테두리의 모서리 둥근 정도;*/
+  padding-left: 15px; /*박스 안에 여백주기*/
+}
+
+.inputField button {
+  width: 50px;
+  height: 100%;
+  border: none; /*none : 아예 영역도 없어짐*/
+  outline: none; /*outline : border바깥 부분에 테두리를 하나 더 두르는 부분, 형식 : outline: ?px ? color형식*/
+  background-color: blueviolet;
+  color: white;
+  font-size: 22px;
+  cursor: pointer; /*마우스를 사용할 때 보이는 커서의 모양을 변경하는 CSS 속성, 버튼에 마우스올리면 커서모양변함*/
+  border-radius: 5px;
+  margin-left: 5px; /*원하는 방향에 빈공간을 만듬*/
+}
+
+.wrapper .To-do-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.To-do-list li {
+  width: 95%;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: rgb(243, 239, 239);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  margin-right: 40px;
+  padding-left: 15px;
+  overflow: hidden; /*박스 안에 내용 물*/
+}
+
+.To-do-list li span {
+  position: absolute;
+  right: -45px;
+  color: white;
+  background-color: red;
+  width: 45px;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.To-do-list li:hover span {
+  /*반응선택자*/
+  right: 0;
+}
+
+.wrapper .footer {
+  align-items: center;
+  margin: 0 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer button {
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  padding: 6px 10px;
+}

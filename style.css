@@ -46,6 +46,14 @@ body {
   cursor: pointer; /*마우스를 사용할 때 보이는 커서의 모양을 변경하는 CSS 속성, 버튼에 마우스올리면 커서모양변함*/
   border-radius: 5px;
   margin-left: 5px; /*원하는 방향에 빈공간을 만듬*/
+  opacity: 0.6;
+  pointer-events: none; /*auto로 하면 버튼 클릭시 이벤트가 일어난다*/
+}
+
+.inputField button.active {
+  /*링크 가상클래스*/
+  opacity: 1;
+  pointer-events: auto; /* */
 }
 
 .wrapper .To-do-list {
